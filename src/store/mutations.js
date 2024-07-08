@@ -1,9 +1,9 @@
 export function setSearchedMeals(state,meals){
-    state.searchedMeals=meals
+    state.searchedMeals=meals || []
 }
 export function setSearchedByLetters(state,meals){
-    state.searchedByLetter=meals
+    state.searchedByLetter=meals || []
 }
 export function setSearchedByIngradients(state,meals){
-    state.searchedByIngradients=meals
+    state.searchedByIngradients=meals || []
 }

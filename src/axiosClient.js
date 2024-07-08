@@ -1,6 +1,9 @@
 import axios from "axios";
 
+const API = 'https://themealdb.com/api/json/v1/1/';
+
 const axiosClient = axios.create({
-  baseURL: import.meta.env.MY_API_BASE_URL,
+  baseURL: API,
 });
+
 export default axiosClient;
