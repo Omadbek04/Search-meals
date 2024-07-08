@@ -3,9 +3,6 @@
     <h1 class="text-4xl font-bold mb-4">Random Meals</h1>
   </div>
   <Meals :meals="meals" />
-  <pre>
-    {{ meals }}
-  </pre>
 </template>
 <script setup>
 import { onMounted, ref } from "vue";
