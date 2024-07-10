@@ -1,6 +1,6 @@
 <template>
-  <div class="flex gap-2 mt-2 justify-center">
-    <router-link :to="{ name: 'byLetter', params: { letter } }" v-for="letter in letters" :key="letter">
+  <div class="flex gap-2 my-6 justify-center flex-wrap px-8">
+    <router-link class=" font-semibold text-2xl" :to="{ name: 'byLetter', params: { letter } }" v-for="letter in letters" :key="letter">
       {{ letter }}
     </router-link>
   </div>

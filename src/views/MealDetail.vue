@@ -1,7 +1,9 @@
 <template>
-  <div class="max-w-[800px] mx-auto mt-14`">
-    <h3 class="text-5xl font-bold mb-5">{{ meal.strMeal }}</h3>
-    <img :src="meal.strMealThumb" :alt="meal.strMeal" class=" w-full"/>
+  <div class="container mx-auto  mt-5 px-8">
+    <h3 class=" text-2xl md:text-5xl font-bold mb-5">{{ meal.strMeal }}</h3>
+    <div class=" h-[400px] md:h-[600px] mb-5 ">
+      <img :src="meal.strMealThumb" :alt="meal.strMeal"  class=" w-full  h-full object-contain md:object-cover object-center"/>
+    </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-3 text-lg py-2">
       <div><strong>Category: </strong> {{ meal.strCategory }}</div>
@@ -30,9 +32,9 @@
       </div>
     </div>
 
-    <div class="mt-4 flex items-center justify-between">
+    <div class="mt-4 flex items-center justify-between mb-2">
       <YouTubeBtn :href="meal.strYoutube">Go to YouTube</YouTubeBtn>
-      <a v-if="meal.strSource" :href="meal.strSource" class="text-red-500 font-medium text-[18px]"> View Orginal Source</a>
+      <a v-if="meal.strSource" :href="meal.strSource" target="_blank" class="text-red-500 font-medium text-[18px]"> View Orginal Source</a>
     </div>
 
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-8 pb-0">
+  <div class="p-8 pb-0 mb-5">
     <input required type="text" class="rounded border-2 border-gray-200 w-full" placeholder=" Search for Meals" v-model="keyword" @change="searchMeal" />
   </div>
   <Meals :meals="meals"/>
