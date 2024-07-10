@@ -1,10 +1,11 @@
 <template>
-  <a :href="href" target="_blank " class="text-[18px] text-indigo-600 hover:text-indigo-500 font-medium">
-
-    <slot></slot>
+  <a :href="href" target="_blank " class="">
+    <img :src="YoutubeBtnIcon " alt=" youtube icon"  width="50" height="40" class=" object-contain " />
+    <!-- <slot></slot> -->
   </a>
 </template>
 <script setup>
+import YoutubeBtnIcon from "../assets/youtube.svg";
 const props = defineProps({
   href: String,
 });

@@ -1,6 +1,6 @@
 <template>
   <header class="bg-white shadow  flex flex-col md:flex-row md:items-center justify-between px-5 py-[15px] gap-2">
-    <router-link :to="{ name: 'home' }" class="flex items-center">
+    <router-link :to="{ name: 'home' }" class="flex items-center gap-1">
       <img src="../../public/title.svg" alt="Logo" class=" w-14 h-12 md:w-16 md:h-14 object-contain" />
       <p class=" text-[16px] md:text-xl font-semibold text-LogoColor">Search <span class="text-LogoColor2"> meals </span></p>
     </router-link>
